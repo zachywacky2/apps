@@ -15,48 +15,14 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicons/google-drive-ico.ico">
 </head>
 <body>
-    <!-- Start Navbar Code-->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="/home.html">Home</a></li>
-                <li class="dropdown">
-                    <span class="nav-title">Games <i class="fa-solid fa-angle-down arrow"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="/games.html">Online Games</a></li>
-                        <li><a href="/flash-games.html">Flash Games</a></li>
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="/apps.html">Apps <i class="fa-solid fa-angle-down arrow"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/flash-player.html">Flash Player</a></li>
-                        <li><a href="/vpns.html">VPNs</a></li>
-                    </ul>
-                </li>
-                <li><a href="/links.html">Other Links</a></li>
-                <li><a href="/settings.html"><i class="fa-solid fa-gear fa-lg"></i></a></li>
-            </ul>
-            <img src="/assets/img/logo-text/420x32/logo_text_long_white.png" width="420" height="32" alt="logo small">
-        </div>
-    </nav>
-    <!-- End Navbar Code -->
+
   <div class="page-container">
    <div class="content-wrapper">
       <div id="header">
       </div>
       <div id="content" class="center">
          <div class="large-logo">
-            <p>BCHS</p>
-            <p>Unblocked</p>
-            <p>Games</p>
+        
          </div>
          <form id="uv-form">
             <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
@@ -81,43 +47,10 @@
         </div>
       </div>
    </div>
-   <div class="recent">
-    <div class="text5">Resume Playing</div>
-    <div class="activity">
-        <a id="staturl" href="iframe.html"><div onclick="setIframeType('home');localStorage.setItem('shownameandimg', 'true')" id="image" class="imgcont"></div><div id="appname" class="appname"></div></a>
-    </div>
-    <script>
-        document.getElementById("image").style="background-image: url('" + localStorage.getItem('app-image') + "')";
-        document.getElementById("appname").innerHTML = localStorage.getItem('app-name')
-    </script>
-    <script>
-        var appImage = localStorage.getItem('app-image');
-        var appName = localStorage.getItem('app-name');
-        var recentActivityElement = document.querySelector(".recent .activity");
-    
-        if (appImage && appName && storedURL) {
-            imageElement.style.backgroundImage = "url('" + appImage + "')";
-            appNameElement.innerHTML = appName;
-            recentActivityElement.onclick = openlastpage;
-            recentActivityElement.parentNode.style.display = 'block';
-        } else {
-            recentActivityElement.parentNode.style.display = 'none';
-        }        
+
     </script>    
 </div>
-    <!-- Footer Start -->
-    <footer class="footer-sticky">
-        <div class="logo-container">
-            <a>BCHS Unblocked Games</a>
-        </div>
-        <nav class="footer-nav">
-            <a href="/iframe.html" onclick="setIframeType('home');localStorage.setItem('shownameandimg', 'false');localStorage.setItem('storedURL', 'https://forms.gle/it3WqC7rxXLx9ePc8');" class="footer-link">Request Games</a>
-            <a href="/iframe.html" onclick="setIframeType('home');localStorage.setItem('shownameandimg', 'false');localStorage.setItem('storedURL', 'https://forms.gle/jgaXfQ6SYuetojyc8');" class="footer-link">Report a Problem</a>
-            <a href="https://github.com/tw31122007/BCHS-Unblocked-Games" target="_blank" class="footer-link">Github</a>
-            <a href="/credits.html" class="footer-link">Credits</a>
-        </nav>
-    </footer>
-    <!-- Footer End -->
+   
   </div>
       <script src="uv/uv.bundle.js" defer></script>
       <script src="uv/uv.config.js" defer></script>
