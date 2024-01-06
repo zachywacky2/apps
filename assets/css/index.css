@@ -218,6 +218,9 @@ a.box {
 .add-box i {
     font-size: 28px;
     color: #ffffff;
+  }
+.box.google {
+    background-image: url("/assets/img/websites/google.png");
 }
 .box.youtube {
     background-image: url("/assets/img/websites/youtube.png");
