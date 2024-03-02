@@ -1088,7 +1088,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
     client.nativeMethods.defineProperty(window.Object.prototype, __uv.methods.top, {
         configurable: true,
         get() {
-            const val = this.top;
+            const val = this.top; 
 
             if (this === window) {
                 if (val === this.parent) return this[__uv.methods.parent];
